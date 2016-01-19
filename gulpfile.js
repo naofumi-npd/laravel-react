@@ -10,27 +10,21 @@ var elixir = require('laravel-elixir');
  | file for our application, as well as publishing vendor resources.
  |
  */
+require('laravel-elixir-babelify');
+ 
+ 
+
 
 elixir(function(mix) {
     mix.sass('app.scss');
 });
 
 elixir(function(mix) {
-    mix.babel([
-        'order.js',
-    ]);
+    mix.babelify('index.js');
 });
 
-elixir(function(mix) {
-    mix.browserSync();
-});
 
 elixir(function(mix) {
-    mix.version('css/app.css');
-    mix.version('js/all.js');
-});
-
-elixir(function(mix) {
-    mix.version(['css/app.css', 'js/all.js']);
+    mix.version(['css/app.css', 'js/index.js']);
 });
 

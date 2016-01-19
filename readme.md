@@ -26,3 +26,8 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
 # laravel-react
+
+
+change permissions of direcotry, ie bootstrap, resources, storage, public
+NPM install
+gulp
